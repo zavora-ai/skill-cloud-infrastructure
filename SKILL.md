@@ -1,46 +1,9 @@
 ---
 name: cloud-infrastructure
 description: Orchestrate cloud infrastructure — deploy services, scale replicas, manage DNS, handle secrets, promote between environments, monitor costs, and rollback on failure. Use when deploying services, scaling applications, managing DNS records, rotating secrets, promoting to production, checking costs, or rolling back deployments.
-version: "1.0.0"
 license: Apache-2.0
 compatibility: Requires mcp-infrastructure server connected (supports any cloud platform via API).
-allowed-tools:
-  - list_services
-  - get_service
-  - get_logs
-  - get_resources
-  - get_deploy_history
-  - deploy
-  - scale
-  - rollback
-  - restart
-  - list_dns
-  - set_dns
-  - delete_dns
-  - list_secrets
-  - set_secret
-  - delete_secret
-  - rotate_secret
-  - list_environments
-  - get_environment
-  - promote
-  - list_containers
-  - get_cluster_health
-  - get_costs
-  - list_domains
-  - add_domain
-tags:
-  - infrastructure
-  - cloud
-  - deployment
-  - scaling
-  - dns
-  - secrets
-  - costs
-references:
-  - references/tool-sequences.md
-  - references/cross-mcp-workflows.md
-  - references/examples.md
+allowed-tools: [list_services, get_service, get_logs, get_resources, get_deploy_history, deploy, scale, rollback, restart, list_dns, set_dns, delete_dns, list_secrets, set_secret, delete_secret, rotate_secret, list_environments, get_environment, promote, list_containers, get_cluster_health, get_costs, list_domains, add_domain]
 metadata:
   author: Zavora AI
   mcp-server: mcp-infrastructure
